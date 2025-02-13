@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script>
+        function changeColor(fundo,texto) {
+            var nome = document.getElementById("nome");
+            nome.style.color= texto;
+            document.body.style.background = fundo;
+        }
+        </script>
+</head>
+<body>
+    <p id="nome">Texto Texto Texto Texto Texto Texto Texto </p>
+    <button onclick="changeColor ('orange', 'white');" >Estou feliz</button>
+    <button onclick="changeColor ('blue', 'white' )" >Estou triste</button>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<p>Era uma vez uma .......</p>
+
+<button onclick="myFunction()">Escolha</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+  let text = "Escolha!\ngato ou cancelar.";
+  if (confirm(text) == true) {
+    text = "Escolheu gato!!!!!";
+  } else {
+    text = "cancelar";
+  }
+  document.getElementById("demo").innerHTML = text;
+}

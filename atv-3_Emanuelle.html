@@ -1,0 +1,16 @@
+<p> Você tem certeza que quer continuar</p>
+
+<button onclick="myFunction()">Confirmar</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+  let text = "Escolha!\nOK ou Cancelar.";
+  if (confirm(text) == true) {
+    text = "Escolheu sim!!!!!";
+  } else {
+    text = "Você cancelou!";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>

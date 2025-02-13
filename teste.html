@@ -1,0 +1,46 @@
+<html>  
+<body>
+    <h1>Pedra, Papel ou Tesoura</h1>
+  <script>
+    es = prompt ("Digite pedra, papel ou tesoura:")
+   
+
+        var ep ={"pedra", "papel", "tesoura"} 
+        var name = ep[Math.floor(Math.random() * (ep.length - 1))];
+        console.log(ep)
+   
+   
+if (ep == "tesoura"){
+     if (es == "tesoura") {
+        alert ("Opps...empate");
+    } else if (es == "pedra"){
+        alert ("Parece que você ganhou");
+    } else if (es == "papel") {
+        alert ("Que pena...perdeu");
+    }
+}
+
+if (ep == "papel"){
+     if (es == "papel") {
+        alert ("Opps...empate");
+    } else if (es == "tesoura"){
+        alert ("Parece que você ganhou");
+    } else if (es == "pedra") {
+        alert ("Que pena...perdeu");
+    }
+}
+
+if (ep == "pedra"){
+     if (es == "pedra") {
+        alert ("Opps...empate");
+    } else if (es == "papel"){
+        alert ("Parece que você ganhou");
+    } else if (es == "tesoura") {
+        alert ("Que pena...perdeu");
+    }
+}
+
+
+ </script>   
+</body>
+</html>
