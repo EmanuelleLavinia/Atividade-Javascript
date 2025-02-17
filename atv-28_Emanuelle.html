@@ -2,15 +2,15 @@
 <body>
     <h1>Pedra, Papel ou Tesoura</h1>
   <script>
-    es = prompt ("Digite pedra, papel ou tesoura:")
+   var es = prompt ("Digite pedra, papel ou tesoura:")
    
 
-        var ep ={"pedra", "papel", "tesoura"} 
-        var name = ep[Math.floor(Math.random() * (ep.length - 1))];
-        console.log(ep)
+        var ep =["pedra", "papel", "tesoura"];
+        var name = ep[Math.floor(Math.random() * ep.length)];
+        console.log(name)
    
    
-if (ep == "tesoura"){
+if (name == "tesoura"){
      if (es == "tesoura") {
         alert ("Opps...empate");
     } else if (es == "pedra"){
@@ -20,7 +20,7 @@ if (ep == "tesoura"){
     }
 }
 
-if (ep == "papel"){
+if (name == "papel"){
      if (es == "papel") {
         alert ("Opps...empate");
     } else if (es == "tesoura"){
@@ -30,7 +30,7 @@ if (ep == "papel"){
     }
 }
 
-if (ep == "pedra"){
+if (name == "pedra"){
      if (es == "pedra") {
         alert ("Opps...empate");
     } else if (es == "papel"){
