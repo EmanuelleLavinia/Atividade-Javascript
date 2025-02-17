@@ -2,14 +2,15 @@
 
 <button onclick="myFunction()">Escolha</button>
 
-<p id="demo"></p>
+<p id="escolha"></p>
 <script>
 function myFunction() {
-  let text = "Escolha!\ngato ou cancelar.";
+  let text = "Escolha: gato ou cancelar.";
   if (confirm(text) == true) {
     text = "Escolheu gato!!!!!";
   } else {
     text = "cancelar";
   }
-  document.getElementById("demo").innerHTML = text;
+  document.getElementById("escolha").innerHTML = text;
 }
+</script>
