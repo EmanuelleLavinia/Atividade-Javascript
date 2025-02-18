@@ -2,16 +2,14 @@
 <head>
     <script>
         function toUpperCase(elemento) {
-            elemento.toUpperCase();
+            elemento.innerHTML = elemento.innerHTML.toUpperCase();
         }
-        alert('Foi');
-        </script>
+    </script>
 </head>
 <body>
     <p id="nome">Texto Texto Texto Texto Texto Texto Texto </p>
-    <button onclick="toUpperCase ('nome');">Mudar para maiúscula</button>
+    <button onclick="toUpperCase (document.getElementById('nome'));">Mudar para maiúscula</button>
    
 
 </body>
 </html>
-
